@@ -41,13 +41,19 @@ The following table lists the available request fields.
 Field | Data type | Required/Optional | Description
 :--- | :--- | :--- | :---
 `name` | String | Optional | The name of the memory.
+`application_type` | String | Optional | The application that created this conversation.
+`additional_info` | Object | Optional | Additional information about the memory.
 
 #### Example request
 
 ```json
 POST /_plugins/_ml/memory/
 {
-  "name": "Conversation for a RAG pipeline"
+  "name": "Conversation for a RAG pipeline",
+  "application_type": "conversational-search",
+  "additional_info": {
+    "suggestion": "api.openai.com"
+  }
 }
 ```
 {% include copy-curl.html %}

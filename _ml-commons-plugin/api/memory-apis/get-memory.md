@@ -57,7 +57,11 @@ GET /_plugins/_ml/memory/N8AE1osB0jLkkocYjz7D
   "create_time": "2024-02-02T18:07:06.887061463Z",
   "updated_time": "2024-02-02T19:01:32.121444968Z",
   "name": "Conversation for a RAG pipeline",
-  "user": "admin"
+  "user": "admin",
+  "application_type": "conversational-search",
+  "additional_info": {
+    "suggestion": "api.openai.com"
+  }
 }
 ```
 
